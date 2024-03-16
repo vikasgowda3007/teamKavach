@@ -1,0 +1,33 @@
+.logo {
+    width: 3em;
+    padding-right: 2em;
+}
+
+.title {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.dPic {
+    height: calc(100vh - 130px);
+    margin:0 auto;
+    display:block;
+}
+
+.body-data {
+    display: flex;
+}
+
+.left-pic-btn {
+    float: left;
+    align-self: center;
+}
+
+.right-pic-btn {
+    float: right;
+    align-self: center;
+}
+
+.instagram {
+    width: 2em;
+}
