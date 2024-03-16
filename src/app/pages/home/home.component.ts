@@ -32,7 +32,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 export class HomeComponent implements OnInit {
   constructor(public dialog: MatDialog) {}
 
-  private dListPics: string[] = ['assets/jpg/d1.jpg', 'assets/jpg/d2.jpg', 'assets/jpg/d3.jpg', 'assets/jpg/d4.jpg'];
+  private dListPics: string[] = ['teamKavach/src/assets/jpg/d1.jpg', 'teamKavach/src/assets/jpg/d2.jpg', 'teamKavach/src/assets/jpg/d3.jpg', 'teamKavach/src/assets/jpg/d4.jpg'];
   public dPic: string = '';
   // private timeLeft: number = 6000;
   private index: number = 0;
