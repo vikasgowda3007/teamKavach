@@ -7,11 +7,12 @@ import { RouterOutlet } from '@angular/router';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [],
   imports: [
     CommonModule,
     BrowserModule,
-    RouterOutlet
+    RouterOutlet,
+    AppComponent
   ]
 })
 export class AppModule { }
