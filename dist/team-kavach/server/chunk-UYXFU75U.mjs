@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{a as r,b as i,c as p,d as n,k as m,m as a,n as f,q as s,w as c}from"./chunk-ITWPZDMV.mjs";var d=(()=>{let o=class o{constructor(){this.title="Team Kavach"}};o.\u0275fac=function(e){return new(e||o)},o.\u0275cmp=r({type:o,selectors:[["app-root"]],decls:2,vars:0,template:function(e,h){e&1&&(i(0,"h1"),n(1,"Hello, Team Kavach"),p())}});let t=o;return t})();var l=[];var v={providers:[c(l),f()]};var C={providers:[s()]},g=m(v,C);var x=()=>a(d,g),k=x;export{k as a};
