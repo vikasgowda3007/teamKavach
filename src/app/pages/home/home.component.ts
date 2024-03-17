@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatDialog} from '@angular/material/dialog'
-import { DonateDialogComponent } from '../donate-dialog/donate-dialog.component';
 import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -30,6 +28,12 @@ import { HeaderComponent } from "../header/header.component";
 export class HomeComponent {
   public imgCollection: Array<object> = [
     {
+      image: 'assets/jpg/d0.jpg',
+      thumbImage: 'assets/jpg/d0.jpg',
+      alt: 'Image 0',
+      title: 'Image 0'
+    },
+    {
       image: 'assets/jpg/d1.jpg',
       thumbImage: 'assets/jpg/d1.jpg',
       alt: 'Image 1',
@@ -53,5 +57,5 @@ export class HomeComponent {
       alt: 'Image 4',
       title: 'Image 5'
     },
-];
+  ];
 }
