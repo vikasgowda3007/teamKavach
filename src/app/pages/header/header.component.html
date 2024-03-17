@@ -1,0 +1,65 @@
+<div>
+    <mat-toolbar color="primary" class="header">
+        <mat-toolbar-row>
+            <img class="logo" src="assets/svg/logo.svg">
+            <span class="title">Team Kavach</span>
+            <button mat-raised-button color="warn" (click)="openDonateDialog()">Donate for a cause</button>
+        </mat-toolbar-row>
+        <mat-toolbar-row class="toolbar-menu">
+            <button mat-raised-button color="primary" [matMenuTriggerFor]="aboutUs">
+                ABOUT US
+                <mat-icon iconPositionEnd>arrow_drop_down</mat-icon>
+            </button>
+            
+            <mat-menu #aboutUs="matMenu">
+            <button mat-menu-item>About Us</button>
+            <button mat-menu-item [matMenuTriggerFor]="peopleBehind">People Behind</button>
+            <button mat-menu-item>Impact</button>
+            <button mat-menu-item>Reach & Presence</button>
+            <button mat-menu-item>Civic Driven Change</button>
+            <button mat-menu-item>Milestone</button>
+            </mat-menu>
+
+            <button mat-raised-button color="primary" [matMenuTriggerFor]="ourWork">
+                OUR WORK
+                <mat-icon iconPositionEnd>arrow_drop_down</mat-icon>
+            </button>
+            
+            <mat-menu #ourWork="matMenu">
+            <button mat-menu-item>Education</button>
+            <button mat-menu-item>Health</button>
+            <button mat-menu-item>livelihood</button>
+            <button mat-menu-item>Women Empowerment</button>
+            <button mat-menu-item>Disaster Response</button>
+            <button mat-menu-item>Empowering Grassroots</button>
+            <button mat-menu-item>Privileged Children</button>
+            </mat-menu>
+
+            <button mat-raised-button color="primary" [matMenuTriggerFor]="getInvolved">
+                GET INVOLVED
+                <mat-icon iconPositionEnd>arrow_drop_down</mat-icon>
+            </button>
+            
+            <mat-menu #getInvolved="matMenu">
+            <button mat-menu-item>Individual Support</button>
+            <button mat-menu-item>School Parterships</button>
+            <button mat-menu-item>Volunteers</button>
+            </mat-menu>
+
+            <button mat-raised-button color="primary" [matMenuTriggerFor]="contactUs">
+                CONTACT US
+                <mat-icon iconPositionEnd>arrow_drop_down</mat-icon>
+            </button>
+            
+            <mat-menu #contactUs="matMenu">
+            <button mat-menu-item>Get In Touch</button>
+            <button mat-menu-item>FAQs</button>
+            </mat-menu>
+
+            <mat-menu #peopleBehind="matMenu">
+            <button mat-menu-item>Leadership</button>
+            <button mat-menu-item>Our People</button>
+            </mat-menu>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</div>

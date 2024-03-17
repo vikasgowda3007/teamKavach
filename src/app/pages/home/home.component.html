@@ -1,20 +1,14 @@
 <div>
-    <mat-toolbar color="primary">
-        <mat-toolbar-row>
-            <img class="logo" src="assets/svg/logo.svg">
-            <span class="title">Team Kavach</span>
-            <button mat-raised-button color="warn" (click)="openDonateDialog()">Donate for a cause</button>
-        </mat-toolbar-row>
-    </mat-toolbar>
-    <ng-image-slider
-        [images]="imgCollection"
-        [infinite]="true"
-        slideImage="2"
-        [autoSlide]="2"
-        [imageSize]="{width: '50%', height: 400}"
-        #nav>
-    </ng-image-slider>
+    <app-header></app-header>
     <div class="body-data">
+        <ng-image-slider
+            [images]="imgCollection"
+            [infinite]="true"
+            slideImage="2"
+            [autoSlide]="2"
+            [imageSize]="{width: '50%', height: 500}"
+            #nav>
+        </ng-image-slider>
         <p>
             Established in 2002, Team Kavach is an Indian development organization, impacting the lives of over 15 lakh children and their families every year. We have more than 400 projects on education, healthcare, livelihood, and women empowerment in over 2,000 remote villages and urban slums across 25 states of India.
         </p>
@@ -27,7 +21,55 @@
         <p>
             Strong believers of impact and sustainability
         </p>
-    </div>
+        <h1 class="program-title"><b>Our Programmes</b></h1>
+        <div class="programs">
+            <div class="leftPrograms">
+                <div class="program-element">
+                    <img decoding="async" width="300" height="264" alt="Education" data-src="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-1.png" class="programs-icon" src="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-1.png">
+                    <div>
+                        <h2 class="education-title programs-title">EDUCATION</h2>
+                        <p class="programs-body">Education, nutrition and holistic development of children</p>
+                    </div>
+                </div>
+                <div class="program-element">
+                    <img decoding="async" width="300" height="311" alt="Women Empowerment" data-srcset="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-3.png 300w, https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-3-289x300.png 289w" data-src="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-3.png" data-sizes="(max-width: 300px) 100vw, 300px" class="programs-icon" src="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-3.png" sizes="(max-width: 300px) 100vw, 300px" srcset="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-3.png 300w, https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-3-289x300.png 289w">
+                    <div>
+                        <h2 class="women-empowerment-title programs-title">WOMEN EMPOWERMENT</h2>
+                        <p class="programs-body">Empowering adolescent girls &amp; women through community engagement </p>
+                    </div>
+                </div>
+                <div class="program-element">
+                    <img decoding="async" width="500" height="500" alt="" data-srcset="https://www.smilefoundationindia.org/wp-content/uploads/2024/02/16.jpg 500w, https://www.smilefoundationindia.org/wp-content/uploads/2024/02/16-300x300.jpg 300w, https://www.smilefoundationindia.org/wp-content/uploads/2024/02/16-150x150.jpg 150w" data-src="https://www.smilefoundationindia.org/wp-content/uploads/2024/02/16.jpg" data-sizes="(max-width: 500px) 100vw, 500px" class="programs-icon" src="https://www.smilefoundationindia.org/wp-content/uploads/2024/02/16.jpg" sizes="(max-width: 500px) 100vw, 500px" srcset="https://www.smilefoundationindia.org/wp-content/uploads/2024/02/16.jpg 500w, https://www.smilefoundationindia.org/wp-content/uploads/2024/02/16-300x300.jpg 300w, https://www.smilefoundationindia.org/wp-content/uploads/2024/02/16-150x150.jpg 150w">
+                    <div>
+                        <h2 class="empowering-grassroots-title programs-title">EMPOWERING GRASSROOTS</h2>
+                        <p class="programs-body">Helping community-based organizations become locally sustainable</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightPrograms">
+                <div class="program-element">
+                    <img decoding="async" width="360" height="291" alt="Healthcare" data-srcset="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-2.png 360w, https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-2-300x243.png 300w" data-src="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-2.png" data-sizes="(max-width: 360px) 100vw, 360px" class="programs-icon" src="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-2.png" sizes="(max-width: 360px) 100vw, 360px" srcset="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-2.png 360w, https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-2-300x243.png 300w">
+                    <div>
+                        <h2 class="healthcare-title programs-title">HEALTHCARE</h2>
+                        <p class="programs-body">Taking healthcare services to doorsteps of hard to reach communities </p>
+                    </div>
+                </div>
+                <div class="program-element">
+                    <img decoding="async" width="400" height="311" alt="Livelihood" data-srcset="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-4.png 400w, https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-4-300x233.png 300w" data-src="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-4.png" data-sizes="(max-width: 400px) 100vw, 400px" class="programs-icon" src="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-4.png" sizes="(max-width: 400px) 100vw, 400px" srcset="https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-4.png 400w, https://www.smilefoundationindia.org/wp-content/uploads/2022/09/Desktop-Version-4-300x233.png 300w">
+                    <div>
+                        <h2 class="livelihood-title programs-title">Livelihood</h2>
+                        <p class="programs-body">Skill training and placement support for underprivileged youth</p>
+                    </div>
+                </div>
+                <div class="program-element">
+                    <img decoding="async" width="500" height="500" alt="" data-srcset="https://www.smilefoundationindia.org/wp-content/uploads/2024/02/15.jpg 500w, https://www.smilefoundationindia.org/wp-content/uploads/2024/02/15-300x300.jpg 300w, https://www.smilefoundationindia.org/wp-content/uploads/2024/02/15-150x150.jpg 150w" data-src="https://www.smilefoundationindia.org/wp-content/uploads/2024/02/15.jpg" data-sizes="(max-width: 500px) 100vw, 500px" class="programs-icon" src="https://www.smilefoundationindia.org/wp-content/uploads/2024/02/15.jpg" sizes="(max-width: 500px) 100vw, 500px" srcset="https://www.smilefoundationindia.org/wp-content/uploads/2024/02/15.jpg 500w, https://www.smilefoundationindia.org/wp-content/uploads/2024/02/15-300x300.jpg 300w, https://www.smilefoundationindia.org/wp-content/uploads/2024/02/15-150x150.jpg 150w">
+                    <div>
+                        <h2 class="diaster-response-title programs-title">DISASTER RESPONSE</h2>
+                        <p class="programs-body">Reach out and respond to the needs of the disaster-affected people</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     <mat-toolbar color="primary" class="footer">
         <mat-toolbar-row>
             <span class="title">Team Kavach</span>

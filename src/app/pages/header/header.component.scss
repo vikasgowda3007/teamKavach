@@ -1,0 +1,17 @@
+.logo {
+    width: 3em;
+    padding-right: 2em;
+}
+
+.title {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+}
+
+.toolbar-menu {
+    justify-content: flex-end;
+}
