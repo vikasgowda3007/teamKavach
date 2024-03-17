@@ -15,7 +15,15 @@
 }
 
 .body-data {
-    display: flex;
+    padding: 20px;
+    line-height: 1.5;
+    margin: 0 0 1em;
+    text-align: center;
+    color: #000;
+    font-family: Raleway, Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .left-pic-btn {
@@ -30,4 +38,9 @@
 
 .instagram {
     width: 2em;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
 }

@@ -6,18 +6,32 @@
             <button mat-raised-button color="warn" (click)="openDonateDialog()">Donate for a cause</button>
         </mat-toolbar-row>
     </mat-toolbar>
+    <ng-image-slider
+        [images]="imgCollection"
+        [infinite]="true"
+        slideImage="2"
+        [autoSlide]="2"
+        [imageSize]="{width: '50%', height: 400}"
+        #nav>
+    </ng-image-slider>
     <div class="body-data">
-        <button mat-fab color="accent" class="left-pic-btn" (click)="leftPic()">
-            <mat-icon>arrow_back_ios</mat-icon>
-        </button>
-        <img class="dPic" [src]="dPic">
-        <button mat-fab color="accent" class="right-pic-btn" (click)="rightPic()">
-            <mat-icon>arrow_forward_ios</mat-icon>
-        </button>
+        <p>
+            Established in 2002, Team Kavach is an Indian development organization, impacting the lives of over 15 lakh children and their families every year. We have more than 400 projects on education, healthcare, livelihood, and women empowerment in over 2,000 remote villages and urban slums across 25 states of India.
+        </p>
+        <p>
+            A group of young minds✨
+        </p>
+        <p>
+            Thoughtful change makers
+        </p>
+        <p>
+            Strong believers of impact and sustainability
+        </p>
     </div>
-    <mat-toolbar color="primary">
+    <mat-toolbar color="primary" class="footer">
         <mat-toolbar-row>
             <span class="title">Team Kavach</span>
+            <p>Contact us: </p>
             <a href="https://www.instagram.com/team_kavach/" target="_blank" class="footer-social-icon">
                 <img class="instagram" src="assets/jpg/Instagram_icon.png">
             </a>
